@@ -40,7 +40,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
     <>
       <div
         className={cn(
-          "fixed inset-0 bg-black/40 z-40 transition-opacity",
+          "fixed inset-0 bg-black/40 z-40 transition-opacity ",
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -50,7 +50,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
 
       <aside
         className={cn(
-          "fixed inset-y-0 right-0 z-50 w-full bg-white shadow-xl transition-transform duration-300",
+          "fixed inset-y-0 right-0 z-50 w-93.75 bg-white shadow-xl transition-transform duration-300",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -61,7 +61,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
           </button>
         </div>
 
-        <nav className="px-12 py-6 space-y-10 text-sm text-right">
+        <nav className="px-12 py-6 space-y-10 text-sm text-right ">
           {SECTIONS.map((section, index) => (
             <div
               key={index}
