@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 const useGetModelById = (id: number) => {
     const [models, setModels] = useState<TopLevel>()
-    const [_loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
 
     useEffect(() => {
@@ -25,7 +25,8 @@ const useGetModelById = (id: number) => {
 
     return {
         models,
-        error
+        error,
+        loading
     }
 
 }

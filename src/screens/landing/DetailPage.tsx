@@ -5,10 +5,11 @@ import { useParams } from "react-router-dom";
 export const DetailPage = () => {
   const { id } = useParams<{ id: string }>();
   const modelId = Number(id);
-  const { models } = useGetModelById(modelId);
+  const { models, loading } = useGetModelById(modelId);
 
   return (
     <div className="px-4 max-w-360 mx-auto">
+      {loading && <p>Cargando detalles...</p>}
       <div className="gap-5 flex flex-col lg:flex-row lg:items-center lg:justify-center">
         <img src={models?.photo} alt="" />
         <div className="lg:flex lg:flex-col">
