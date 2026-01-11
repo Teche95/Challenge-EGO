@@ -6,17 +6,17 @@ Aplicación web desarrollada con **React + Vite** que permite visualizar modelos
 
 ### 🛠️ Pasos para levantar el proyecto
 
-## 1. git clone https://github.com/Teche95/Challenge-EGO.git
+#### 1. git clone https://github.com/Teche95/Challenge-EGO.git
 
-## 2. cd challenge-ego
+#### 2. cd challenge-ego
 
-## 3. npm install
+#### 3. npm install
 
-## 4. npm run dev
+#### 4. npm run dev
 
 ### 🧱 Link al deploy
 
-## https://challenge-ego-8lkc.vercel.app/
+#### https://challenge-ego-8lkc.vercel.app/
 
 ### 🚀 Tecnologías utilizadas
 
